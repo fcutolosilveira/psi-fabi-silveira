@@ -50,6 +50,9 @@ cite { font-size: .9rem; font-style: normal; letter-spacing: .08em; text-transfo
 .band { background: var(--mist); padding: 78px 0; }
 .section { padding: 82px 0; }
 .two-column, .approach-grid, .info-grid { display: grid; gap: 45px; }
+.video-section { padding-top: 72px; padding-bottom: 72px; }
+.video-intro { max-width: 620px; color: var(--muted); }
+.intro-video { display: block; width: min(100%, 460px); max-height: 720px; margin: 30px auto 0; background: var(--navy); border: 1px solid var(--line); }
 .two-column > div:first-child { color: var(--muted); max-width: 560px; }
 .feature-list { border-top: 1px solid var(--line); }
 .feature-list div { display: grid; gap: 4px; padding: 16px 0; border-bottom: 1px solid var(--line); }
