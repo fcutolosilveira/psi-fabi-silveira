@@ -58,7 +58,7 @@ cite { font-size: .9rem; font-style: normal; letter-spacing: .08em; text-transfo
 .feature-list div { display: grid; gap: 4px; padding: 16px 0; border-bottom: 1px solid var(--line); }
 .feature-list span { color: var(--muted); font-size: .95rem; }
 .cards { display: grid; gap: 17px; }
-.card { display: flex; height: 300px; flex-direction: column; background: var(--white); border: 1px solid var(--line); padding: 26px; }
+.card { display: flex; min-height: 300px; flex-direction: column; background: var(--white); border: 1px solid var(--line); padding: 26px; }
 .card p:last-child { color: var(--muted); margin-bottom: 0; }
 .card-num { color: var(--blue); font-size: .8rem; font-weight: 700; letter-spacing: .1em; margin: 0 0 14px; }
 .approach-grid > div:last-child { color: var(--muted); max-width: 650px; }
@@ -90,13 +90,13 @@ cite { font-size: .9rem; font-style: normal; letter-spacing: .08em; text-transfo
   .header-cta { margin-top: 0; justify-self: end; }
   .hero-grid { grid-template-columns: minmax(280px, 430px) 1fr; }
   .two-column, .approach-grid, .info-grid { grid-template-columns: 1fr 1fr; align-items: start; }
-  .cards { grid-template-columns: 1fr 1fr; }
+  .cards { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .cta-panel { padding: 46px; }
 }
 @media (max-width: 600px) {
   .wrap { width: min(100% - 28px, 1080px); }
   .hero { padding-top: 42px; }
-  .card { height: 330px; }
+  .card { min-height: 330px; }
   .cta-panel, .footer-row { flex-direction: column; align-items: flex-start; }
   .cta-panel { padding: 28px 22px; }
   .float-wa { right: 12px; bottom: 12px; }
