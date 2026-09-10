@@ -25,6 +25,9 @@ a { color: var(--blue); }
 .brand { font-size: 1.6rem; color: var(--navy); text-decoration: none; }
 .brand-sub { color: var(--muted); font-size: .9rem; margin: 0; }
 .header-cta { margin-top: 12px; }
+.site-nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 20px; }
+.site-nav a { color: var(--navy); font-size: .82rem; font-weight: 700; text-decoration: none; }
+.site-nav a:hover, .site-nav a:focus-visible { color: var(--blue); }
 .hero { padding: 70px 0 82px; }
 .hero-grid { display: grid; gap: 46px; align-items: center; }
 .portrait-wrap { position: relative; max-width: 430px; }
@@ -88,6 +91,7 @@ cite { font-size: .9rem; font-style: normal; letter-spacing: .08em; text-transfo
 @media (min-width: 760px) {
   .header-row { grid-template-columns: auto 1fr auto; align-items: baseline; gap: 15px; }
   .header-cta { margin-top: 0; justify-self: end; }
+  .site-nav { justify-content: flex-end; }
   .hero-grid { grid-template-columns: minmax(280px, 430px) 1fr; }
   .two-column, .approach-grid, .info-grid { grid-template-columns: 1fr 1fr; align-items: start; }
   .cards { grid-template-columns: repeat(3, minmax(0, 1fr)); }
